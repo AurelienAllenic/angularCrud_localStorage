@@ -1,0 +1,125 @@
+.container_all_page{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.container_btn_student{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 1rem;
+}
+.modal{
+    display: none;
+}
+.modal-title{
+    font-size: 1.5rem;
+}
+h4{
+    font-size: 2rem;
+}
+.btn{
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    transition: all ease-in-out 0.25s;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+    cursor: pointer;
+    border: 1px solid black;
+    transition: all ease-in-out 0.25s;
+}
+.title_list_students{
+    font-size: 1.56rem;
+    padding: 0rem 2rem 3rem 2rem;
+    text-align: center;
+}
+.container_all_cards{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.container_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: -24px -4px 15px -3px rgba(0,0,0,0.1);
+}
+.container_btn_card{
+    padding: 2.5rem 2rem 2rem 2rem;
+    display: flex;
+    gap: 2rem;
+}
+.modal-body div{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.modal-body{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+.modal-footer{
+    display: flex;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+.modal-body div input{
+    border: none;
+    background-color: white;
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
+}
+.modal-body div textarea{
+    border: none;
+    background-color: white;
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
+    resize: none;
+}
+@media(max-width: 725px){
+    .modal-body div{
+        flex-direction: column;
+    }
+    .modal-body div{
+        flex-direction: row;
+    }
+}
+@media(max-width: 398px){
+    h4{
+        font-size: 1.3rem;
+    }
+    .btn{
+        font-size: 1.1rem;
+    }
+    .container_card{
+        padding: 1.5rem;
+    }
+    .title_list_students{
+        padding: 1rem;
+    }
+    .container_btn_student{
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+}
